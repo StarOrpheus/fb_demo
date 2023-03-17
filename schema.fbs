@@ -1,0 +1,21 @@
+namespace schema;
+
+// bool        in_fuse_invironment;
+// uint16_t    umask;
+// args_t      environ;
+// std::string build_dir;
+// std::string cmd;
+// args_t      args;
+// uint32_t    job_id;
+
+table BuildCommand {
+  in_fuse_invironment:bool;
+  umask:ushort;
+  environ:[string];
+  build_dir:string;
+  cmd:string;
+  args:[string];
+  job_id:uint32;
+}
+
+root_type BuildCommand;
